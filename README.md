@@ -1,4 +1,4 @@
-Statistics-RankCorrelation
+Statistics::RankCorrelation
 ==========================
 
-Compute the rank correlation between two vectors
+Perl code to compute the Pearson and Kendall rank correlation between two vectors.
