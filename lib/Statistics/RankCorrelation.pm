@@ -265,10 +265,6 @@ sub sign {
 
 __END__
 
-=head1 NAME
-
-Statistics::RankCorrelation - Compute the rank correlation between two vectors 
-
 =head1 SYNOPSIS
 
   use Statistics::RankCorrelation;
