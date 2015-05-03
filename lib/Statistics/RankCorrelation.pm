@@ -198,7 +198,7 @@ sub csim {
     return $k / (@$m1 * @$m1);
 }
 
-sub pad_vectors { # Append zeros to either vector for all values in the other that do not have a corresponding value.
+sub pad_vectors {
     my ($u, $v) = @_;
 
     if (@$u > @$v) {
@@ -211,7 +211,7 @@ sub pad_vectors { # Append zeros to either vector for all values in the other th
     return $u, $v;
 }
 
-sub correlation_matrix { # Build a square, binary matrix that represents "higher or lower" value within the given vector.
+sub correlation_matrix {
     my $u = shift;
     my $c;
 
@@ -225,7 +225,7 @@ sub correlation_matrix { # Build a square, binary matrix that represents "higher
     return $c;
 }
 
-sub kendall { # Return Kendall's tau correlation coefficient
+sub kendall {
     my $self = shift;
 
     # Calculate number of concordant and discordant pairs.
