@@ -1,5 +1,9 @@
 Changes file for Statistics::RankCorrelation
 
+{{$NEXT}}
+    - Added handy dzil dist.ini
+    - Corrected tests with numeric "cmp_ok ==."
+
 0.1203 2010.08.16
     - Improved documentation.
 
