@@ -1,9 +1,11 @@
-# $Id: RankCorrelation.pm 802 2007-12-03 22:16:27Z gene $
-
 package Statistics::RankCorrelation;
-our $VERSION = '0.1203';
+# ABSTRACT: Compute the rank correlation between two vectors
+
 use strict;
 use warnings;
+
+our $VERSION = '0.1204';
+
 use Carp;
 
 sub new {
@@ -23,7 +25,6 @@ sub _init {
         if( ref $arg eq 'ARRAY' ) {
                if( !defined $self->x_data ) { $self->x_data( $arg ) }
             elsif( !defined $self->y_data ) { $self->y_data( $arg ) }
-            # XXX Handle extra data. Thanks. Love, Gene.
         }
         elsif( !ref $arg ) {
             my $v = shift;
@@ -488,16 +489,5 @@ Jerome E<lt>jerome.hert@free.frE<gt>
 Jon Schutz E<lt>Jon.Schutz@youramigo.comE<gt>
 
 Andy Lee E<lt>yikes2000@yahoo.comE<gt>
-
-=head1 AUTHOR AND COPYRIGHT
-
-Gene Boggs E<lt>gene@cpan.orgE<gt>
-
-Copyright 2010, Gene Boggs, All Rights Reserved.
-
-=head1 LICENSE
-
-This program is free software; you can redistribute or modify it under
-the same terms as Perl itself.
 
 =cut
