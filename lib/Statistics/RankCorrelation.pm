@@ -4,7 +4,7 @@ package Statistics::RankCorrelation;
 use strict;
 use warnings;
 
-our $VERSION = '0.1204';
+our $VERSION = '0.1205';
 
 use Carp;
 
@@ -152,9 +152,7 @@ sub rank {
     }
 
     # Remove the non-tied ranks.
-    while( my( $k, $v ) = each %ties ) {
-        delete $ties{$k} unless @$v > 1;
-    }
+    delete @ties{ grep @{ $ties{$_} } <= 1, keys %ties };
 
     # Return the ranks arrayref in a scalar context and include ties
     # if called in a list context.
