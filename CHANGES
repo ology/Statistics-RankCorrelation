@@ -1,6 +1,8 @@
 Changes file for Statistics::RankCorrelation
 
 {{$NEXT}}
+
+0.1204 May 03, 2015
     - Added handy dzil dist.ini
     - Corrected tests with numeric "cmp_ok ==."
 
