@@ -296,7 +296,6 @@ test.
 
 =head2 new
 
-  $c = Statistics::RankCorrelation->new;
   $c = Statistics::RankCorrelation->new( \@u, \@v );
   $c = Statistics::RankCorrelation->new( \@u, \@v, sorted => 1 );
 
@@ -327,38 +326,33 @@ is dependent on the x vector.
 
 =head2 size
 
-  $c->size( $s );
   $s = $c->size;
 
-Set or return the number of array elements.
+Return the number of array elements.
 
 =head2 x_rank
 
-  $c->x_rank( $r );
   $r = $c->x_rank;
 
-Set or return the ranks as an array reference.
+Return the ranks as an array reference.
 
 =head2 y_rank
 
-  $c->y_rank( $y );
   $y = $c->y_rank;
 
-Set or return the ranks as an array reference.
+Return the ranks as an array reference.
 
 =head2 x_ties
 
-  $c->x_ties( $t );
   $t = $c->x_ties;
 
-Set or return the ties as a hash reference.
+Return the x ties as a hash reference.
 
 =head2 y_ties
 
-  $c->y_ties( $t );
   $t = $c->y_ties;
 
-Set or return the ties as a hash reference.
+Return the y ties as a hash reference.
 
 =head2 spearman
 
@@ -476,12 +470,16 @@ L<http://en.wikipedia.org/wiki/Kendall's_tau>
 
 For helping make this sturdier code:
 
-Thomas Breslin E<lt>thomas@thep.lu.seE<gt>
+Thomas Breslin
 
-Jerome E<lt>jerome.hert@free.frE<gt>
+Jerome
 
-Jon Schutz E<lt>Jon.Schutz@youramigo.comE<gt>
+Jon Schutz
 
-Andy Lee E<lt>yikes2000@yahoo.comE<gt>
+Andy Lee
+
+anno
+
+mst
 
 =cut
