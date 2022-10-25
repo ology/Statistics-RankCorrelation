@@ -97,7 +97,7 @@ ok $t == sprintf( '%.3f', $c->kendall ), 'kendall tau';
 @y = qw(   7  0  28  50 28  28 20  12   7  17 );
 my @sx = qw( 86 97 99 100 100 103 106 110 113 113 );
 my @sy = qw(  0 20 28  28  50  28   7  17   7  12 );
-@x_rank = qw( 1 2 3 4.5  4.5 6 7   8 9.5 9.5 ); 
+@x_rank = qw( 1 2 3 4.5  4.5 6 7   8 9.5 9.5 );
 @y_rank = qw( 1 6 8 8   10   8 2.5 5 2.5 4   );
 $c = Statistics::RankCorrelation->new( \@x, \@y, sorted => 1 );
 is_deeply $c->x_data, \@sx, 'x sorted data';
