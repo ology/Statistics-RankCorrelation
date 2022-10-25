@@ -1,5 +1,8 @@
 Changes file for Statistics::RankCorrelation
 
+{{$NEXT}}
+    - Remove unused import.
+
 0.1205 2015-10-19
     - Improved documentation.
     - Refactored "each syntax" code.
