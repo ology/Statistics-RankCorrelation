@@ -284,7 +284,7 @@ __END__
 
 =head1 DESCRIPTION
 
-This module computes rank correlation coefficient measures between two 
+This module computes rank correlation coefficient measures between two
 sample vectors.
 
 Examples can be found in the distribution C<eg/> directory and methods
