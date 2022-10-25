@@ -362,11 +362,11 @@ Return the y ties as a hash reference.
 
 Return Spearman's rho.
 
-Spearman's rho rank-order correlation is a nonparametric measure of 
-association based on the rank of the data values and is a special 
+Spearman's rho rank-order correlation is a nonparametric measure of
+association based on the rank of the data values and is a special
 case of the Pearson product-moment correlation.
 
-Here C<x> and C<y> are the two rank vectors and C<i> is an index 
+Here C<x> and C<y> are the two rank vectors and C<i> is an index
 from one to B<n> number of samples.
 
 =head2 kendall
@@ -386,11 +386,11 @@ pairs and B<n> is the number of samples.
 
   $n = $c->csim;
 
-Return the contour similarity index measure.  This is a single 
+Return the contour similarity index measure.  This is a single
 dimensional measure of the similarity between two vectors.
 
-This returns a measure in the (inclusive) range C<[-1..1]> and is 
-computed using matrices of binary data representing "higher or lower" 
+This returns a measure in the (inclusive) range C<[-1..1]> and is
+computed using matrices of binary data representing "higher or lower"
 values in the original vectors.
 
 This measure has been studied in musical contour analysis.
@@ -422,8 +422,8 @@ are averaged.  An example will elucidate:
   ( $u, $v ) = pad_vectors( [ 1, 2, 3, 4 ], [ 9, 8 ] );
   # [1, 2, 3, 4], [9, 8, 0, 0]
 
-Append zeros to either input vector for all values in the other that 
-do not have a corresponding value.  That is, "pad" the tail of the 
+Append zeros to either input vector for all values in the other that
+do not have a corresponding value.  That is, "pad" the tail of the
 shorter vector with zero values.
 
 =head2 co_sort
@@ -439,7 +439,7 @@ sorted first.
 
 Return the correlation matrix for a single vector.
 
-This function builds a square, binary matrix that represents "higher 
+This function builds a square, binary matrix that represents "higher
 or lower" value within the vector itself.
 
 =head2 sign
