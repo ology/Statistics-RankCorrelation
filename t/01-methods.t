@@ -123,7 +123,7 @@ ok $t == sprintf( '%.3f', $c->kendall ), 'kendall tau';
 # http://www2.warwick.ac.uk/fac/sci/moac/currentstudents/peter_cock/python/rank_correlations/
 @x = qw( 5.05 6.75 3.21 2.66 );
 @y = qw( 1.65 26.5 -5.93 7.96 );
-@x_rank = qw( 3 4 2 1 ); 
+@x_rank = qw( 3 4 2 1 );
 @y_rank = qw( 2 4 1 3 );
 $c = Statistics::RankCorrelation->new( \@x, \@y );
 is_deeply $c->x_rank, \@x_rank, 'x rank';
