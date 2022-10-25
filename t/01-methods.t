@@ -6,7 +6,7 @@ BEGIN { use_ok 'Statistics::RankCorrelation' }
 
 my @x = qw( 0 0 0 0 );
 my @y = @x;
-my @x_rank = qw( 2.5 2.5 2.5 2.5 ); 
+my @x_rank = qw( 2.5 2.5 2.5 2.5 );
 my @y_rank = @x_rank;
 my %x_ties = ( 0 => [ 0, 1, 2, 3 ] );
 my %y_ties = %x_ties;
