@@ -4,7 +4,7 @@ package Statistics::RankCorrelation;
 use strict;
 use warnings;
 
-our $VERSION = '0.1205';
+our $VERSION = '0.1206';
 
 sub new {
     my $proto = shift;
