@@ -299,7 +299,7 @@ test.
 
 This method constructs a new C<Statistics::RankCorrelation> object.
 
-If given two numeric vectors (as array references), the statistical 
+If given two numeric vectors (as array references), the statistical
 ranks are computed.  If the vectors are of different size, the shorter
 is padded with zeros.
 
